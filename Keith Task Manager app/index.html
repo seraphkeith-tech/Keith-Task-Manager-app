@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Task Manager</h1>
+       
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="What needs to be done?">
+            <button id="add-btn">Add Task</button>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="Active">Active</button>
+            <button class="filter-btn" data-filter="Completed">Completed</button>
+        </div>
+
+        <!-- List Container -->
+        <ul id="task-list"></ul>
+       
+        <!-- Empty State Message -->
+        <p id="empty-state" class="hidden">No tasks for today!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
